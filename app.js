@@ -1,2 +1,3 @@
-let test = "testing if in sync";
-console.log(test.length);
+if (1 === 1){
+console.log("It's True!");
+}
