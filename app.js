@@ -23,3 +23,10 @@ const fitBitData = {
   workoutsThisWeek: '5 of 7',
   avgGoodSleep: '2:13'
 }
+
+const numbers = {
+  100: 'one hundred',
+  16: 'sixteen'
+};
+
+numbers[14] = 'fourteen';
