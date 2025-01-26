@@ -8,3 +8,7 @@ shoppingList[shoppingList.length] = 'Ice Cream';
 lotto.push(69);
 lotto.push(true);
 lotto.pop();
+
+
+shoppingList.unshift('soda');
+lotto.shift();
