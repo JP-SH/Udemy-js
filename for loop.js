@@ -61,7 +61,36 @@
 
 
 // for of loop
-for of loop
-for (let char of 'manchester city') {
-  console.log(char.toUpperCase());
+// for (let char of 'manchester city') {
+//   console.log(char.toUpperCase());
+// }
+
+
+// nexted for of loop
+// const magicSquare = [
+//   [2, 7, 6],
+//   [9, 5, 1],
+//   [4, 3, 8]
+// ];
+
+// for (let row of magicSquare) {
+//   let sum = 0;
+//   for (let num of row) {
+//     sum += num;
+//   }
+//   console.log(`${row} summed to ${sum}`);
+// }
+
+
+// for in loop
+const jeopardyWinnings = {
+  regularPlay: 2522700,
+  watsonChallenge: 300000,
+  tournamentOfChampions: 500000,
+  battleOfTheDecades: 100000
+};
+
+for (let prop in jeopardyWinnings) {
+  console.log(prop);
+  console.log(jeopardyWinnings[prop]);
 }
