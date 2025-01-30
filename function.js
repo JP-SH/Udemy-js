@@ -1,13 +1,22 @@
-// Function to compute the product of p1 and p2
-function myFunction(p1, p2) {
-  return p1 * p2;
+// simple function
+function rollDie() {
+  let roll = Math.floor(Math.random() * 6) + 1;
+  console.log(`you rolled ${roll}`);
 }
 
+// function with argument
+function greet(name) {
+  console.log(`wasssuppp ${name}`)
+}
 
-// Function is called, the return value will end up in x
-let x = myFunction(4, 3);
+function throwDice (numRolls) {
+  for (let i = 0; i < numRolls; i++){
+    rollDie();
+  }
 
-function myFunction(a, b) {
-// Function returns the product of a and b
-  return a * b;
+}
+
+// simple function with multiple arguments (parameters)
+function sum(x, y) {
+  console.log(x + y);
 }
