@@ -20,3 +20,41 @@ function throwDice (numRolls) {
 function sum(x, y) {
   console.log(x + y);
 }
+
+// simple function with return
+function add(x,y) {
+  return x + y;
+}
+
+function isPurple(colour) {
+  if (colour.toLowerCase() === 'purple') {
+  return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function isPurple(colour) {
+  if (colour.toLowerCase() === 'purple') {
+  return true;
+  }
+  // since returns end function execution you can remove the else
+    return false;
+}
+
+
+function isPurple(colour) {
+  // since '===' is a boolean statement you can write it all in one line
+  return (colour.toLowerCase() === 'purple')
+
+}
+
+function containsPurple(arr) {
+  for (let colour of arr) {
+    if (colour === 'purple' || colour === 'magenta'){
+    return true;
+    }
+  }
+  return false;
+}
