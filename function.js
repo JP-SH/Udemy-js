@@ -58,3 +58,53 @@ function containsPurple(arr) {
   }
   return false;
 }
+
+
+// different ways to create password validator that checks is password is longer than 8 characters, contains no spaces and doesnt have the username in it
+// function isValidPassword(password, username) {
+//   if(password.length < 8  ) {
+//     return false;
+//   }
+//   if(password.indexOf(' ') !== -1){
+//     return false;
+//   }
+//   if(password.indexOf(username) !== -1) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// function isValidPassword(password, username) {
+//   if (
+//     password.length < 8 ||
+//     password.indexof(' ') !== -1 ||
+//     password.indexOf(username) !== -1
+//   ) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// function isValidPassword(password,username) {
+//   const tooShort = password.length < 8;
+//   const hasSpaces = password.indexOf(' ') !== -1;
+//   const tooSimilar = password.indexOf(username) !== -1;
+//   if (tooSimilar && hasSpaces || tooSimilar) return false;
+//   return true;
+// }
+
+function isValidPassword(password, username) {
+  const tooShort = password.length < 8;
+  const hasSpaces = password.indexOf(' ') !== -1;
+  const tooSimilar = password.indexOf(username) !== -1;
+  return !tooSimilar && !hasSpaces && !tooSimilar;
+}
+
+// function to find the average value in an array of numbers
+function avg(array) {
+  let total = 0;
+  for(let num of array){
+    total += num
+  }
+  return total / array.length;
+}
