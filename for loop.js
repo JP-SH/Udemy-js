@@ -94,3 +94,12 @@ for (let prop in jeopardyWinnings) {
   console.log(prop);
   console.log(jeopardyWinnings[prop]);
 }
+
+// for of loop inside of function
+function isPangram(sentence) {
+  for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+    if (sentence.indexOf(char) === -1)
+      return false;
+  }
+  return true;
+}
