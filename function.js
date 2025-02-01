@@ -108,3 +108,13 @@ function avg(array) {
   }
   return total / array.length;
 }
+
+// function to check if sentence contains every letter of the aplhabet
+function isPangram(sentence) {
+  let = lowerCased = sentence.toLowerCase();
+  for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+    if (lowerCased.indexOf(char) === -1)
+      return false;
+  }
+  return true;
+}
