@@ -146,3 +146,21 @@ function getCard() {
   // and even shorter way to write it without creating the value and suit vairable is
   // return {value: pick(values), suit: pick(suits)};
 }
+
+// anonymous functions
+// let numbers = [10, 20, 30, 40, 50];
+
+// let squareNumbers = numbers.map(function(number) {
+//   return number * number;
+// });
+
+// nested functions
+// function outerFun(a) {
+//   function innerFun(b) {
+//       return a + b;
+//   }
+//   return innerFun;
+// }
+
+// const addTen = outerFun(10);
+// console.log(addTen(5));
