@@ -1,9 +1,9 @@
-// simple while loop
-// let j = 0;
-// while (j < 5) {
-//   console.log("AYOOO", j);
-//   j++;
-// }
+simple while loop
+let j = 0;
+while (j < 5) {
+  console.log("AYOOO", j);
+  j++;
+}
 
 
 
