@@ -164,3 +164,14 @@ function getCard() {
 
 // const addTen = outerFun(10);
 // console.log(addTen(5));
+
+
+// function as a return value(callback)
+function makeBetweenFunc(x,y) {
+  return function(num) {
+    return num >= x && num <= y;
+  }
+}
+
+const isChild = makeBetweenFunc(0,18);
+const isInNineties = makeBetweenFunc(1990,2000);
