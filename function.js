@@ -120,16 +120,16 @@ function isPangram(sentence) {
 }
 
 // function that returns a random playing card in a object
-// function getCard() {
-//   const values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
-//   const valIdx = Math.floor(Math.random() * values.length);
-//   const value = values[valIdx];
+function getCard() {
+  const values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+  const valIdx = Math.floor(Math.random() * values.length);
+  const value = values[valIdx];
 
-//   const suits = ['clubs', 'spades', 'hearts', 'diamonds' ];
-//   const suitIdx = Math.floor(Math.random() * suits.length);
-//   const suit = suits[suitIdx];
-//   return {values: value, suits: suit};
-// }
+  const suits = ['clubs', 'spades', 'hearts', 'diamonds' ];
+  const suitIdx = Math.floor(Math.random() * suits.length);
+  const suit = suits[suitIdx];
+  return {values: value, suits: suit};
+}
 
 function pick(array) {
   const idx = Math.floor(Math.random() * array.length);
