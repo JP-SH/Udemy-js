@@ -98,6 +98,9 @@ const neilBook = books.find(b => {
   return b.authors.includes('Neil Gaiman');
 })
 
+// every
+const goodRating = books.every(book => book.rating > 4.5)
+
 const numbers2 = [34,35,67,54,109,102,32,9];
 
 // filter
@@ -113,3 +116,15 @@ const results = books.filter(book => {
   const title = book.title.toLowerCase();
   return title.includes(query.toLowerCase());
 })
+
+// every
+const words = ['dog','dig','log','bag','waG'];
+
+const threeLetter = words.every(word => word.length === 3)
+
+const allEndInG = words.every(word => {
+  const last = word.length - 1;
+  return word[last].toLowerCase() === 'g'.toLowerCase();
+})
+
+const someStartWithD = words.some(word => word[0] === 'd')
