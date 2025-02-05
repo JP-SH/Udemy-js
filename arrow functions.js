@@ -54,3 +54,62 @@ const parityList2 = numbers.map(n => {
 })
 
 const parityList3 = numbers.map(n => n % 2 === 0 ? 'even' : 'odd')
+
+// find
+let movies = [
+  "The Fantastic Mr. Fox",
+  "Mr. and Mrs. Smith",
+  "Mrs. Doubtfire",
+  "Mr. Deeds"
+]
+
+const movie = movies.find(m => {
+  return m.includes('Mrs');
+})
+
+const movie2 = movies.find(m => m.indexOf('Mrs') === 0);
+
+
+const books = [
+  {
+    title: 'Good Omens',
+    authors: ['Terry Pratchett', 'Neil Gaiman'],
+    rating: 4.25
+  },
+  {
+    title: 'Bone: The Complete Edition',
+    authors: ['Jeff Smith'],
+    rating: 4.42
+  },
+  {
+    title: 'American Gods',
+    authors: ['Neil Gaiman'],
+    rating: 4.11
+  },
+  {
+    title: 'A Gentleman in Moscow',
+    authors: ['Amor Towles'],
+    rating: 4.36
+  }
+]
+
+const goodBook = books.find(b => (b.rating >= 4.4))
+const neilBook = books.find(b => {
+  return b.authors.includes('Neil Gaiman');
+})
+
+const numbers2 = [34,35,67,54,109,102,32,9];
+
+// filter
+const odds = numbers2.filter(n => (
+  n % 2 === 1
+))
+const evens = numbers2.filter(n => {
+  return n % 2 === 0;
+})
+
+const query = 'The';
+const results = books.filter(book => {
+  const title = book.title.toLowerCase();
+  return title.includes(query.toLowerCase());
+})
