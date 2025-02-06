@@ -98,8 +98,14 @@ const neilBook = books.find(b => {
   return b.authors.includes('Neil Gaiman');
 })
 
-// every
-const goodRating = books.every(book => book.rating > 4.5)
+// sort
+// const goodRating = books.sort(book => book.rating > 4.5)
+
+// const goodRating = books.sort((a,b) => a.rating -b.rating);
+
+// however sort is one the few array callback methods that mutates the original array so a way to write it without changing the original array is
+const goodRating = books.slice().sort((a,b) => a.rating -b.rating);
+
 
 const numbers2 = [34,35,67,54,109,102,32,9];
 
@@ -128,3 +134,50 @@ const allEndInG = words.every(word => {
 })
 
 const someStartWithD = words.some(word => word[0] === 'd')
+
+// sort
+const prices = [400.40, 3000, 99.99, 35.99, 12.00, 9500];
+
+// const ascSort = prices.sort((a,b) => a - b);
+// const descSort = prices.sort((a,b) => b - a);
+
+// however since sort is one of the few array callback methods that mutates the original array the way to write it without changing the original array is
+
+const ascSort = prices.slice().sort((a,b) => a -b);
+
+// reduce
+const nums = [1,2,3,4,5,6,7];
+
+const product = nums.reduce((total,currentValue) =>{
+  return total * currentValue;
+})
+
+const grades = [87, 64, 96, 92, 88, 99, 73, 70, 64];
+
+// const maxGrade = grades.reduce((max, currentVal) => {
+//   if(max < currentVal) return currentVal;
+//   else return max;
+// })
+
+const maxGrade = grades.reduce((max, currentVal) => {
+  return Math.max(max, currentVal);
+})
+
+const minGrade = grades.reduce((min, currentVal) => Math.min(min, currentVal))
+
+const votes = ['y','y','n','y','n','y','n','y','n','n','n','y','y'];
+
+// const result = votes.reduce((tally, val) => {
+//   if (tally[val]) {
+//     tally[val] ++
+//   } else {
+//     tally[val] = 1;
+//   }
+//   return tally;
+// }, {})
+
+// another way to write it
+const result = votes.reduce((tally, val) => {
+  tally[val] = (tally[val] || 0) + 1;
+  return tally
+}, {})

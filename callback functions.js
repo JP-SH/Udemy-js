@@ -77,3 +77,11 @@ const numDetails = numbers.map(function(n){
 const addDot = words.map(function(word){
   return word.toUpperCase().split('').join('.')
 })
+
+// reduce
+const groupedByRating = books.reduce((groupedBooks, book) =>{
+  const key = Math.floor(book.rating);
+  if (!groupedBooks[key]) groupedBooks[key] = [];
+    groupedBooks[key].push(book)
+    return groupedBooks;
+},{})
