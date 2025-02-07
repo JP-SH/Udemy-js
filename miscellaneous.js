@@ -12,9 +12,9 @@
 // }
 
 // the best way to write it now though is using 'DEFAULT PARAMS'
-function multiply(x, y = 1) {
-  return x * y;
-}
+// function multiply(x, y = 1) {
+//   return x * y;
+// }
 
 function greeting(name, greeting = 'ayooo') {
     console.log(`${greeting} ${name}`);
@@ -53,3 +53,35 @@ const tommy = {
   gender: 'male',
   build: 'small'
 }
+
+// to create a function that doesnt have a limit on the number of arguments you use rest
+
+function sum(...nums) {
+  return nums.reduce((totalVal, currentVal) => {
+    return totalVal + currentVal
+  })
+}
+
+// another way to write a similar function
+const multiply = (...nums) => (
+  nums.reduce((total, currentVal) => total * currentVal)
+)
+
+// destructuring array
+const raceResults = [
+  'Usain Bolt',
+  'Kyle Walker',
+  'Eliud Kipchogie',
+  'Tyson Gay',
+  'Neil Armstrong'
+];
+
+// const gold = raceResults[0];
+// const silver = raceResults[1];
+// const bronze = raceResults[2];
+// instead of writing it like this you can write it like this
+const [gold, silver, bronze] = raceResults;
+// if you wanted to get the first and the fourth only
+const [first, , , fourth] = raceResults;
+// can use rest for this as well
+const [winnner, ,...others] = raceResults;
