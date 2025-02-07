@@ -19,3 +19,37 @@ function multiply(x, y = 1) {
 function greeting(name, greeting = 'ayooo') {
     console.log(`${greeting} ${name}`);
 }
+
+// spread
+function giveMeFour(a,b,c,d) {
+  console.log('a', a)
+  console.log('b', b)
+  console.log('c', c)
+  console.log('d', d)
+}
+const colours = ['red', 'yellow','green', 'blue'];
+
+// if i was to call giveMeFour(colours) it would only console.log the first line as its one array
+// but if i did giveMeFour(...colours) it would console.log all four lines as it spreads them from one array into four arguments
+
+// using spready to combine arrays
+const epl = ['man city', 'man utd', 'liverpool']
+const laLiga = ['real madrid', 'barcelona', 'atletico madrid']
+
+// to combine them i could go const soccerTeams = [...epl,...laliga]
+
+// making copies using spread
+const epl2 = [...epl]
+
+// spread can also be used the same way on objects
+
+const dog = {
+  legs: 4,
+  isCute: 'yes'
+}
+
+const tommy = {
+  ...dog,
+  gender: 'male',
+  build: 'small'
+}
