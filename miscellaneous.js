@@ -85,3 +85,24 @@ const [gold, silver, bronze] = raceResults;
 const [first, , , fourth] = raceResults;
 // can use rest for this as well
 const [winnner, ,...others] = raceResults;
+
+// destructuring object
+const runner = {
+  firstName: "Eliud",
+  last: "Kipchogie",
+  country: "Kenya",
+  title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const {
+  firstName,
+  last,
+} = runner;
+
+// changing the name of the key and also using rest on an object
+const {
+  country: nation,
+  ...otherDetails
+} = runner;
+
+// destructuring parameters
