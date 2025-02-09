@@ -106,3 +106,24 @@ const {
 } = runner;
 
 // destructuring parameters
+// function print(person){
+//   const {firstName, last, country
+// } = person;
+// console.log(`${firstName} ${last} ${country}`)
+// }
+
+// another way or writing it
+function print({firstName, last, country}) {
+  console.log(`${firstName} ${last} ${country}`)
+}
+
+// destructuring array
+const response = [
+  'HTTP/1.1',
+  '200 OK',
+  'application/json'
+]
+
+function parseResponse([one, two, three]) {
+  console.log(`${one} ${two} ${three}`)
+}
