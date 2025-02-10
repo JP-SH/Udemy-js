@@ -142,8 +142,12 @@ const annoyer = {
   // }
   // this doesnt work because 'this' changes depending on how its called. In this example we are calling 'start' ourselves as a method using annoyer.Start. But the function weve written isnt being called by us its being called by 'setInterval' and because of the way its called 'this' is set to the window object
   start() {
-    setInterval(() => {
+    this.timerId = setInterval(() => {
       console.log(this.pickPhrase())
     }, 3000)
+  },
+  // the reason it works with the arrow functions is because they dont get their own 'this' meaning it doesnt change the value of this.Which means it doesnt change the value of this it gets the value of it from the start method (which has set the value of it to the object not the window)
+  stop() {
+    clearInterval(this.timerId);
   }
 }
