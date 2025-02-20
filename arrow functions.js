@@ -1,13 +1,5 @@
 // simple arrow function. It replaces the 'function' in function expressions
 
-const square = function(x) {
-  return x * x;
-}
-
-// how to write it with a arrow function
-const square = (x) => {
-  return x * x;
-}
 
 // if you only have one parameter you dont have to use parens
 const isEven = num => {
