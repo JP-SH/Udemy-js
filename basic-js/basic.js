@@ -19,3 +19,11 @@ i++
 // pre increment operator
 // this returns the value of i after it has been incremented
 ++i
+
+// object literal
+const mancity = {
+  cb: "dias",
+  manager: 'pep',
+  cam: 'cherki',
+  lb: 'nouri',
+}
