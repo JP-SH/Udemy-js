@@ -47,3 +47,62 @@ const randNum = Math.floor(Math.random() * 10);
 //!= - not equal
 // === - strict equality
 // !== -  strict non-equality
+
+
+// conditionals
+// if statement
+let goals = 3;
+
+if ( goals === 3) {
+  console.log('You scored a hatrick');
+}
+
+// elseif
+
+// 0-5 = free
+// 5-10 = $10
+// 10-65 = $20
+// 65 = $10
+
+const age = 9;
+
+if (age < 5) {
+  console.log("You are a child you get in for free");
+} else if (age < 10) {
+  console.log("You are a child you pay $10");
+} else if (age < 65) {
+  console.log("You are an adult. You pay $20");
+} else {
+  console.log("You are a senior. You pay $10");
+}
+
+// else
+// else will run if none of the conditionals are met
+
+let rating = -99;
+
+if (rating === 3) {
+  console.log("You are a star");
+} else if (rating === 2) {
+  console.log('Meets expectation')
+} else if (rating === 1) {
+  console.log('Needs improvement')
+} else {
+  console.log('Invalid rating');
+}
+
+// nested conditional
+
+const password = prompt("please enter a new password");
+
+// password must be 6+ characters
+// password cannot include space
+if (password.length >= 6) {
+  if (password.indexOf(' ') === -1) {
+  console.log("Valid Password");
+  } else {
+  console.log("Password cannot conatain spaces!");
+  }
+} else {
+  console.log("Password is too short! Must be 6+ characters");
+}
