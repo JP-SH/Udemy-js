@@ -38,3 +38,12 @@ console.log(`There are ${sheep + cows} animals on the farm`);
 // to get a random number
 const randNum = Math.floor(Math.random() * 10);
 // there are many other method for this object such as .ceiling, .pow, .max etc etc
+
+// comparison operators
+// > - greater than
+// < - less than
+// >= - greater than or equal to
+// <= - less than or equal to
+//!= - not equal
+// === - strict equality
+// !== -  strict non-equality
