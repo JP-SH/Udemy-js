@@ -106,3 +106,30 @@ if (password.length >= 6) {
 } else {
   console.log("Password is too short! Must be 6+ characters");
 }
+
+// falsy values are -
+// false / 0 / ""(empty string) / null / undefined / NaN
+// everything else is truthy
+
+// logical operators
+//  && this is 'and'. Both sides must be true for the entire thing to be true
+
+// || this is 'or'. Only one side has to be true for the entire thing to be true
+
+// ! this is 'not'. returns true if expression if false
+
+// nested array and object
+const got = {
+  house: "Stark",
+  pet: "Direwolf",
+  members: [
+    {
+      name: "Ned",
+      isAlive: false
+    },
+    {
+      name: "John",
+      isAlive: true
+    }
+  ]
+};
