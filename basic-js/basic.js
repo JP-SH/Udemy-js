@@ -133,3 +133,16 @@ const got = {
     }
   ]
 };
+
+// for loop with if else
+const scores = [85, 42, 77, 59, 90, 33];
+
+for (let i = 0; i < scores.length; i++) {
+  const score = scores[i];
+
+  if (score >= 60) {
+    console.log(`Student ${i + 1}: ${score} - Passed`);
+  } else {
+    console.log(`Student ${i + 1}: ${score} - Failed`);
+  }
+}
