@@ -181,3 +181,16 @@ function printSeatingChart(seats) {
     row++;
   }
 }
+
+// while loop with break
+function countToFive() {
+  let num = 1;
+
+  while (true) {
+    console.log(num);
+    if (num === 5) {
+      break;
+    }
+    num++;
+  }
+}
