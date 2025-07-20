@@ -156,3 +156,28 @@ function countToTen() {
     num++;
   }
 }
+
+// nested loop
+const classroom = [
+  ["Alice", "Bob", "Charlie"],
+  ["Jim", "Him", "Sully"],
+  ["Kev", "Jas", "Deep"]
+];
+
+
+function printSeatingChart(seats) {
+  let row = 0;
+
+  while (row < seats.length) {
+    let col = 0;
+    let seatRow = "";
+
+    while (col < seats[row].length) {
+      seatRow += `[${seats[row][col]}] `;
+      col++;
+    }
+
+    console.log(`Row ${row + 1}: ${seatRow}`);
+    row++;
+  }
+}
