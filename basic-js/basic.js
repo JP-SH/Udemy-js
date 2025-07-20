@@ -146,3 +146,13 @@ for (let i = 0; i < scores.length; i++) {
     console.log(`Student ${i + 1}: ${score} - Failed`);
   }
 }
+
+// while loop
+function countToTen() {
+  let num = 1;
+
+  while (num <= 10) {
+    console.log(num);
+    num++;
+  }
+}
