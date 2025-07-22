@@ -229,3 +229,8 @@ function announceWinter() {
 
 // Call  function
 announceWinter();
+
+// with argument
+function welcome(name) {
+  console.log(`Welcome, ${name}!`);
+}
