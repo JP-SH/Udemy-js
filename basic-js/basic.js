@@ -221,3 +221,11 @@ for (const score of Object.values(testScores)) {
 }
 
 console.log(`Total score: ${total}`);
+
+// function
+function announceWinter() {
+  console.log("Winter is coming");
+}
+
+// Call  function
+announceWinter();
