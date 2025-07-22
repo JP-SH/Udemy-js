@@ -194,3 +194,30 @@ function countToFive() {
     num++;
   }
 }
+
+// iteration over object
+const person = {
+  name: "Batman",
+  age: 30,
+  city: "Gotham"
+};
+
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+const testScores = {
+  Thing1: 92,
+  Thing2: 76,
+  Thing3: 85,
+  Thing4: 59,
+  Thing5: 99
+};
+
+let total = 0;
+
+for (const score of Object.values(testScores)) {
+  total += score;
+}
+
+console.log(`Total score: ${total}`);
