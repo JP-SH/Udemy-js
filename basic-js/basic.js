@@ -234,3 +234,22 @@ announceWinter();
 function welcome(name) {
   console.log(`Welcome, ${name}!`);
 }
+
+// multiple arguments
+function compareNumbers(a, b) {
+    if (a > b) {
+        return a;
+    } else if (b > a) {
+        return b;
+    } else {
+        return "equal";
+    }
+}
+
+function repeatString(str, times) {
+    let result = "";
+    for (let i = 0; i < times; i++) {
+        result += str;
+    }
+    return result;
+}
