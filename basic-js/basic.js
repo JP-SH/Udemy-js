@@ -261,3 +261,27 @@ function add(x,y) {
   }
   return x + y;
 }
+
+// function scope
+function sayHello() {
+    let message = "Hello, world!"; // This variable is scoped to the sayHello function
+    console.log(message); // This works
+}
+
+sayHello(); // Outputs: Hello, world!
+
+console.log(message); // Wont work. message is not defined outside the function
+
+function outerFunction() {
+    let outerVar = "I'm outside!";
+
+    function innerFunction() {
+        let innerVar = "I'm inside!";
+        console.log(outerVar);  //  innerFunction can access outerFunction's variables
+    }
+
+    innerFunction();
+    console.log(innerVar); // wont work.  innerVar is not accessible in outerFunction
+}
+
+outerFunction();
