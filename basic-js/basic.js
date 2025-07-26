@@ -285,3 +285,19 @@ function outerFunction() {
 }
 
 outerFunction();
+
+// block scope
+let radius = 8;
+
+if (radius > 0) {
+  const PI = 3.14;
+
+  let circ = 2 * PI * radius;
+}
+
+console.log (radius);
+// 8
+console.log(PI);
+// not defined
+console.log(circ);
+// not defined
