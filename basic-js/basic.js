@@ -301,3 +301,15 @@ console.log(PI);
 // not defined
 console.log(circ);
 // not defined
+
+// higher order function
+function repeatAction(action, times) {
+  for (let i = 0; i < times; i++) {
+    action();
+  }
+}
+
+// this function takes the previous function as an argument
+repeatAction(function() {
+  console.log("Hello!");
+}, 3);
