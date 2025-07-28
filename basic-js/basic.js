@@ -313,3 +313,22 @@ function repeatAction(action, times) {
 repeatAction(function() {
   console.log("Hello!");
 }, 3);
+
+// try/catch
+function divide(a, b) {
+  try {
+    return a / b;
+  } catch (e) {
+    console.log("Error:", e.message);
+    return null;
+  }
+}
+
+function toUpper(str) {
+  try {
+    return str.toUpperCase();
+  } catch (e) {
+    console.log("Error:", e.message);
+    return "";
+  }
+}
