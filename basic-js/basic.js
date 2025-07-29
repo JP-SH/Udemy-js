@@ -340,3 +340,10 @@ numbers.forEach((num, index) => {
   const result = num * 2;
   console.log(`Item at index ${index}: ${num} * 2 = ${result}`);
 });
+
+// map
+const movies = ["The Nice Guys", "Inception", "Interstellar", ];
+
+const uppercasedMovies = movies.map(function(title) {
+  return title.toUpperCase();
+});
