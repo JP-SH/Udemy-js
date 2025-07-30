@@ -356,3 +356,10 @@ const uppercasedMovies = movies.map(function(title) {
 const subtract = (x,y) => {
   return x - y;
 }
+
+// implicit return
+// const isEven = num => (
+//   num % 2 === 0
+// );
+// one liner implicit return
+const isEven = num => num % 2 === 0;
