@@ -332,3 +332,11 @@ function toUpper(str) {
     return "";
   }
 }
+
+// foreach
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((num, index) => {
+  const result = num * 2;
+  console.log(`Item at index ${index}: ${num} * 2 = ${result}`);
+});
