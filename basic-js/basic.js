@@ -347,3 +347,12 @@ const movies = ["The Nice Guys", "Inception", "Interstellar", ];
 const uppercasedMovies = movies.map(function(title) {
   return title.toUpperCase();
 });
+
+// arrow func
+// const subtract = function(x,y) {
+//   return x - y;
+// }
+
+const subtract = (x,y) => {
+  return x - y;
+}
