@@ -363,3 +363,12 @@ const subtract = (x,y) => {
 // );
 // one liner implicit return
 const isEven = num => num % 2 === 0;
+
+// default param
+function rollDie(numSides = 6) {
+  return Math.floor(Math.random * numSides) + 1
+}
+
+function greet(person, msg = "Greetings", punc = "!"){
+  console.log(`${msg}, ${person}${punc}`)
+}
