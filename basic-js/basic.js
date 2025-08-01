@@ -372,3 +372,11 @@ function rollDie(numSides = 6) {
 function greet(person, msg = "Greetings", punc = "!"){
   console.log(`${msg}, ${person}${punc}`)
 }
+
+// spread
+const scores4 = [85, 92, 78, 99, 100];
+
+// Math.max(scores4); = NaN
+const highestScore = Math.max(...scores4);
+
+console.log(highestScore); // Output: 100
