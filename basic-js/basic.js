@@ -380,3 +380,12 @@ const scores4 = [85, 92, 78, 99, 100];
 const highestScore = Math.max(...scores4);
 
 console.log(highestScore); // Output: 100
+
+// array
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5];
+
+// Combine using spread
+const combined = [...arr1, ...arr2];
+
+console.log(combined); // Output: [1, 2, 3, 4, 5]
