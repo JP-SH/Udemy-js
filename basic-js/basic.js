@@ -398,3 +398,33 @@ function sum(...numbers) {
   }
   return total;
 }
+
+// destructuring array
+const colours = ['red', 'green', 'blue'];
+
+const [firstColour, secondColour, thirdColour] = colours;
+
+console.log(firstColour);  // 'red'
+console.log(secondColour); // 'green'
+console.log(thirdColour);  // 'blue'
+
+// destructuring object
+const car = {
+  brand: 'Ford',
+  model: 'Falcon'
+};
+
+const { brand, model } = car;
+
+console.log(brand); // 'Toyota'
+console.log(model); // 'Corolla'
+
+// destructuring param
+function sayName({ name }) {
+  console.log(`Hello, ${name}!`);
+}
+
+const human2 = { name: 'John' };
+
+sayName(human2);
+// Output: Hello, John!
