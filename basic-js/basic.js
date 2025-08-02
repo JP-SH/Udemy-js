@@ -389,3 +389,12 @@ const arr2 = [4, 5];
 const combined = [...arr1, ...arr2];
 
 console.log(combined); // Output: [1, 2, 3, 4, 5]
+
+// rest params - it will collect all remaining arguments into an array
+function sum(...numbers) {
+  let total = 0;
+  for (let num of numbers) {
+    total += num;
+  }
+  return total;
+}
