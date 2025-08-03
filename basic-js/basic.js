@@ -428,3 +428,18 @@ const human2 = { name: 'John' };
 
 sayName(human2);
 // Output: Hello, John!
+
+// multi nested array
+const nestedArray = [
+  { name: "Jay", age: 25 },
+  [
+    { name: "Kay", age: 30 },
+    [
+      { name: "Kev", age: 35 },
+      { name: "Harry", age: 40 }
+    ]
+  ],
+  [
+    { name: "Ron", age: 28 }
+  ]
+];
