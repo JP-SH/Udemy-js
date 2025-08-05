@@ -446,3 +446,17 @@ const nestedArray = [
 
 // filter
 let evens = [1, 2, 3, 4].filter(x => x % 2 === 0); // [2, 4]
+
+// some and every
+
+// some checks if atleast one element in the array pasts the test
+const numbers69 = [1, 2, 3, 4, 5];
+
+const hasEvenNumber = numbers69.some(num => num % 2 === 0);
+
+console.log(hasEvenNumber); // true (because 2 and 4 are even)
+
+// every checks if all the elements in the array past the test
+const allPositive = numbers.every(num => num > 0);
+
+console.log(allPositive); // true (because all numbers are greater than 0)
