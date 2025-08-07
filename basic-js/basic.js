@@ -309,6 +309,16 @@ function repeatAction(action, times) {
   }
 }
 
+// 'this'. use this keyword to access other properties on the same object
+const char = {
+  name: "Mario",
+  greet() {
+    console.log(this.name);
+  }
+};
+
+person.greet(); // "Mario"
+
 // this function takes the previous function as an argument
 repeatAction(function() {
   console.log("Hello!");
