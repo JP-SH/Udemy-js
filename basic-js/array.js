@@ -59,3 +59,15 @@ const nestedArray = [
     { name: "Ron", age: 28 }
   ]
 ];
+
+// slice and splice
+let countries = ['USA', 'Brasil', 'India', 'Japan'];
+let sliced = countries.slice(1, 3); //  index 1 to (but not including) 3
+
+// console.log(sliced);    Output: ['Brasil', 'India']
+// console.log(countries);  Output: ['USA', 'Brasil', 'India', 'Japan'] (original is unchanged)
+
+let removed = countries.splice(2, 1); // removes 'India'
+
+// console.log(removed);    Output: ['India']
+// console.log(countries);  Output: ['USA', 'Brasil', 'Japan'] - it changes the original
