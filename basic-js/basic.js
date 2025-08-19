@@ -419,6 +419,16 @@ let removedFruit = fruits.pop();
 // console.log(fruits);        Output: ['apple', 'banana']
 // console.log(removedFruit);  Output: 'orange'
 
+// shift and unshift
+let colourz = ['blue', 'green'];
+colourz.unshift('red');
+
+// console.log(colourz);  Output: ['red', 'blue', 'green']
+let removedColour = colourz.shift();
+
+console.log(colourz);       // Output: ['blue', 'green']
+console.log(removedColour); // Output: 'red'
+
 // destructuring array
 const colours = ['red', 'green', 'blue'];
 
