@@ -409,6 +409,16 @@ function sum(...numbers) {
   return total;
 }
 
+// push and pop
+let fruits = ['apple', 'banana'];
+fruits.push('orange');
+
+// console.log(fruits);  Output: ['apple', 'banana', 'orange']
+let removedFruit = fruits.pop();
+
+// console.log(fruits);        Output: ['apple', 'banana']
+// console.log(removedFruit);  Output: 'orange'
+
 // destructuring array
 const colours = ['red', 'green', 'blue'];
 
